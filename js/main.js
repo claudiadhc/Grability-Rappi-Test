@@ -38,7 +38,7 @@
 		
 						var html = [];
 						i = 0;
-						/* loop through array */
+						
 						$.each(json, function(index, d) {
 							if (isEven(i)) {
 								html.push("<div class='panel panel-default'><div id='item-header" + i + "'  class='clearfix item-header'><a  data-toggle='collapse' data-parent='#feed' href='#item" + i + "' id='roundlink" + i + "' href='#'><svg width='79' height='80'  class='pull-left' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>",
@@ -51,7 +51,7 @@
 		
 		
 							}
-							html.push("<div id='item" + i + "' class='clearfix item panel-collapse collapse' ><div class='col-md-3'><img class='img-responsive' src='", d.image, "' alt='' /></div>" + "<div class='col-md-9'><h3 >", d.title, "</h3><p >", d.content, "</p></div></div>");
+							html.push("<div id='item" + i + "' class='clearfix item panel-collapse collapse' ><div class='col-md-3'><img class='img-responsive' src='", d.image, "' alt='' /></div>" + "<div class='col-md-9'><a href='urlsite.php?id=" + d.id + "'><h3 >", d.title, "</h3></a><p >", d.content, "</p></div></div>");
 							i++;
 		
 						});
