@@ -25,7 +25,7 @@
 		}
 		
 		function readJson() {
-		
+			/**Ingresar aquí el JSON a ser parseado**/
 			goUrl = 'http://claudiadhc.com/json/news_mock.json';
 			(function($) {
 				$.ajax({
