@@ -51,7 +51,7 @@
 		
 		
 							}
-							html.push("<div id='item" + i + "' class='clearfix item panel-collapse collapse' ><div class='col-md-3'><img class='img-responsive' src='", d.image, "' alt='' /></div>" + "<div class='col-md-9'><a href='urlsite.php?id=" + d.id + "'><h3 >", d.title, "</h3></a><p >", d.content, "</p></div></div>");
+							html.push("<div id='item" + i + "' class='clearfix item panel-collapse collapse' ><div class='col-md-3'><img class='img-responsive' src='", d.image, "' alt='' /></div>" + "<div class='col-md-9'><a href='urlsite.php?id=" + d.id + "' title='"+ d.title +"'><h3 >", d.title, "</h3></a><p >", d.content, "</p></div></div>");
 							i++;
 		
 						});
